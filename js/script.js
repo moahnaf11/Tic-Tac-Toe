@@ -145,7 +145,7 @@ function forms (e) {
                             }
 
                         })
-                        if (isWin && (!gameBoard.flat().every(cell => cell !== ""))) {
+                        if (isWin) {
                             if (currentPlayerTurn == player1) {
                                 winner1.textContent = `${currentPlayerTurn.name} has won!`
                                 firstPoint.textContent = `Points: ${++firstPlayerPoints}`;
